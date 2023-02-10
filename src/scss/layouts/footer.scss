@@ -183,6 +183,7 @@
 
             &_contacts {
                 font-size: calc((100vw + 2346.8px)/ 173.1);
+                padding: 0 auto;
             }
 
             &_items {
@@ -211,7 +212,6 @@
           font-family: $title-font;
           color: $color-text;
           font-size: calc((100vw + 2346.8px)/ 173.1);
-
         }
 
         &_address {
@@ -222,7 +222,6 @@
           font-family: $title-font;
           color: $color-text;
           font-size: calc((100vw + 2346.8px)/ 173.1);
-
         }
 
         &_phone {
@@ -245,11 +244,16 @@
         display: none;
     }
 
+    
     .footer {
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-rows: 1fr 10vh ;
         background-color: $color-dark-green;
         background-size: contain;
+        height: calc(100vh - 86px);
+        align-content: space-around;
+
+
 
         &__nav {
             display: flex;
@@ -261,8 +265,17 @@
         }
     
         &__work {
-            display: flex;
-            flex-direction: column;
+            display: grid;
+            // flex-direction: column;
+            align-content: space-around;
+
+            // &_list1 {
+            //     al;
+            // }
+
+            // &_list2 {
+            //     grid-row: 2/3;
+            // }
         }
 
         &__cosial {
@@ -285,11 +298,8 @@
        
          &__logo {
             display: flex;
-            width: 100vw;
             justify-content: center;
-            align-items: flex-start;
-            gap: 10%;
-            margin: 8% 0 8% 0;
+            margin: auto;
 
                 
     
@@ -311,13 +321,17 @@
                 align-items: center;
         }
     
+
         &__list {
             display: flex;
             flex-direction: column;
             margin: 0px 5vw;
             padding: 8% 0 0 0;
             cursor: pointer;
-    
+
+          
+
+               
                 &_items-mbl {
                 list-style: none;
                 text-decoration: none;
@@ -330,8 +344,8 @@
                 font-size: calc((100vw + 123.3px)/ 25.4);
                 text-align: center;
                 color: $color-text;
-                margin-bottom: 8%;
-                line-height: 30px;
+                margin-bottom: 6%;
+                line-height: 2vh;
                 } 
 
             &_contacts {
@@ -343,8 +357,8 @@
                 font-size: calc((100vw + 372.6px)/ 40.7);
                 text-align: center;
                 color: $color-text;
-                margin-bottom: 8%;
-                line-height: 30px;
+                margin-bottom: 6%;
+                line-height: 3vh;
             }
             }
         }
