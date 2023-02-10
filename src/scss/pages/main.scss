@@ -7,42 +7,42 @@
       box-sizing: border-box;
     }
 
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-      'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-      'Segoe UI Symbol';
-      background-color:$color-light ;
-    }
-
-.slider {
+.dsk-slider {
     background-color:$color-light ;
-
+    padding: 3% 15%;
   }
 
-    .container {
-      max-width: 70%;
-      margin: 0 auto;
-      padding-top: 10vh;
-    }
-
     .itc-slider {
+
+       &__title {
+            color: $color-text;
+            font-family: $title-font;
+            font-weight: 700;
+            font-size: calc(( 100vw + 2442.8px ) / 123.5);
+            padding: 30px 0;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+
+       } 
      
       &__items {
         counter-reset: slide;
       }
 
       &__item {
+        background-color:$color-dark-green;
+        border-radius: 20px;
         counter-increment: slide;
-        height: 450px;
         position: relative;
-        display: flex;
-        flex-direction: row;
-        padding: 10px;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr;
+        padding: 3% 5% 3% 5%;
+        align-content: center;
 
-        & img {
-            border-radius: 20px;
-        }
+
+       
       }
 
       &__text {
@@ -51,26 +51,36 @@
         margin: auto;
         padding: 0 50px;
 
+        & h2 {
+            padding: 5px;
+        }
+
+        &_description  {
+            font-family: $default-font;
+            color: $color-text;
+            font-size: calc((100vw + 1763.38px)/ 133.23);
+        }
+        
+        &_description-bold {
+            font-weight: bold;
+            text-align: center;
+        }
+            
+        }
+
+
         &_title {
-            // margin: auto;
             display: flex;
             justify-content: center;
             text-align: center;
-
+            font-size: calc(( 100vw + 3042.4px ) / 173.2);
         }
 
-
-        &_button {
-            margin: 5px auto;
-            font-size: 20px;
-            
-        }
+     
       }
-    }
-
 
     .itc-slider__item::before {
-      content: counter(slide) "/5";
+    //   content: counter(slide) "/5";
       position: absolute;
       top: 10px;
       right: 20px;
@@ -81,11 +91,40 @@
       display: block;
     }
 
-    .itc-slider__item:nth-child(1), .itc-slider__item:nth-child(2), .itc-slider__item:nth-child(3), .itc-slider__item:nth-child(4), .itc-slider__item:nth-child(5)  {
-      background-color:$color-dark-green;
-      border-radius: 20px;
-      padding: 10px;
+    .itc-slider-button {
+        background-color: #A0B45B;
+        font-family: "Nunito", sans-serif;
+        color: #FBFFE9;
+        text-decoration: none;
+        font-size: calc((100vw + 1065.8px) / 101.8);
+        width: calc((100vw + 556.4px) / 10.1);
+        height: calc((100vw + 617.6px) / 34.64);
+        border-radius: 15px;
+        box-shadow: 4px 4px 4px 0 rgb(63 84 0 / 70%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1vh auto;
+        cursor: pointer;
     }
+
+    .itc-slider-button-no {
+        color:$color-text;
+        font-family: "Nunito", sans-serif;
+        text-decoration: none;
+        font-size: calc((100vw + 1065.8px) / 101.8);
+        margin: 1vh auto;
+        cursor: pointer;
+    }
+
+    @media screen and (min-width: 1200px )  {
+
+    .itc-slider__item img {
+        border-radius: 20px;
+        margin: auto;
+        width: calc((100vw + 388.88px)/ 4.8);;
+    }
+}
 
 
 @media screen and (min-width: $tablet) and (max-width: $large-desktop) {
@@ -102,7 +141,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
-        height: 100vh;
+        height: calc(99vh - 75px);
 
         &__brand {
             width: calc(( 100vw + 2445.7px ) / 4.94);
@@ -316,34 +355,6 @@
         }
     }
     
-
-    .main-shop-dsk {
-        padding: 3% 15%;
-        background-color: $color-light;
-
-        &__title {
-            padding: 3vh 0;
-            font-family: $title-font;
-            font-weight: 500;
-            text-align: center;
-            color: $color-text;
-            text-transform: uppercase;
-        }
-
-        &__choosemk {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 1vw;
-
-            &_item {
-                padding-bottom: 10px;
-            }
-        }
-
-       
-    }
-
     .main__reviews__dsk {
         padding: 3% 15%;
         background-color: $color-light;
@@ -508,6 +519,11 @@
 }
 
 @media screen and (max-width: $tablet) {
+
+.dsk-slider {
+    display: none;
+}
+
     .main-footer-mbl__map {
         width: 100vw;
         height: 71vw;
@@ -521,6 +537,7 @@
         background-image: url(../../design/assets/images/main/main-backgr-mbl.png);
         background-repeat: no-repeat;
         background-size: cover;
+        height:100vh;
     }
 
     .main-page-mbl-main {
@@ -533,6 +550,7 @@
             margin-top: 20vh;
             width: calc(( 100vw + 173.8px ) / 1.57);
             width: 80vw;
+            height: 100vh;
         }
 
         &__logo {
@@ -566,18 +584,21 @@
                 font-weight: 500;
                 margin-top: 30%;
                 font-size: calc(( 100vw + 400.5px ) / 38.9);
-
-
             }
         }
+
         &__contackts{
             display: flex;
             flex-direction: column;
+        }
 
+        &__footer {
+            margin: auto;
+            padding-bottom: 8vh;
+            align-content: space-around;
         }
 
         &__number { 
-            margin-top: 20vh;
             font-family: $title-font;
             font-weight: 600;
             font-size: calc(( 100vw + 618px )/ 63);
@@ -590,8 +611,6 @@
             display: flex;
             margin-bottom: 10%;
             column-gap: 5vw;
-
-
             justify-content: center;
 
             &_tg {
@@ -633,7 +652,6 @@
         &_4 {
             background-image: url(../../design/assets/images/main/main5.png);
             background-size: 100vw;
-
             margin-bottom: 30px;
         }
 
