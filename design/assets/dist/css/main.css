@@ -662,7 +662,7 @@ p, a {
   }
   .footer__work {
     display: grid;
-    align-content: space-around;
+    align-content: center;
   }
   .footer__cosial {
     display: flex;
@@ -717,7 +717,7 @@ p, a {
     text-align: center;
     color: rgba(0, 0, 0, 0.7);
     margin-bottom: 6%;
-    line-height: 2vh;
+    line-height: 4vh;
   }
   .footer__list_contacts {
     display: flex;
@@ -729,7 +729,7 @@ p, a {
     text-align: center;
     color: rgba(0, 0, 0, 0.7);
     margin-bottom: 6%;
-    line-height: 3vh;
+    line-height: 4vh;
   }
 }
 @media screen and (max-width: 768px) {

@@ -172,8 +172,6 @@
         &__copy-dsk  {
             color: $color-text;
             font-size: calc((100vw + 14810px)/ 865.5);
-
-
         }
 
         &__list {
@@ -253,8 +251,6 @@
         height: calc(100vh - 86px);
         align-content: space-around;
 
-
-
         &__nav {
             display: flex;
             flex-direction: column;
@@ -266,16 +262,7 @@
     
         &__work {
             display: grid;
-            // flex-direction: column;
-            align-content: space-around;
-
-            // &_list1 {
-            //     al;
-            // }
-
-            // &_list2 {
-            //     grid-row: 2/3;
-            // }
+            align-content: center;
         }
 
         &__cosial {
@@ -328,9 +315,6 @@
             margin: 0px 5vw;
             padding: 8% 0 0 0;
             cursor: pointer;
-
-          
-
                
                 &_items-mbl {
                 list-style: none;
@@ -345,7 +329,7 @@
                 text-align: center;
                 color: $color-text;
                 margin-bottom: 6%;
-                line-height: 2vh;
+                line-height: 4vh;
                 } 
 
             &_contacts {
@@ -358,7 +342,7 @@
                 text-align: center;
                 color: $color-text;
                 margin-bottom: 6%;
-                line-height: 3vh;
+                line-height: 4vh;
             }
             }
         }
