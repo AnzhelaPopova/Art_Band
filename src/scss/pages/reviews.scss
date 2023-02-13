@@ -70,15 +70,19 @@
     max-width: 100%;
     user-select: none;
     will-change: transform;
+    display: flex;
+    align-content: center;
 }
 
 .review__text__item {
-    padding: 3vh 3vw;
+    padding: 3vh 9vw;
     background-color: $color-dark-green;
     font-family: $default-font;
     font-weight: 300;
     font-size: 15px;
     color: $color-text;
+    display: flex;
+    align-items: center;
 }
 
 /* buttons left and right */

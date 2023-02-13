@@ -3151,15 +3151,19 @@ p, a {
   max-width: 100%;
   user-select: none;
   will-change: transform;
+  display: flex;
+  align-content: center;
 }
 
 .review__text__item {
-  padding: 3vh 3vw;
+  padding: 3vh 9vw;
   background-color: rgba(160, 180, 91, 0.6);
   font-family: "Nunito", sans-serif;
   font-weight: 300;
   font-size: 15px;
   color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
 }
 
 /* buttons left and right */
