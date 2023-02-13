@@ -10,7 +10,8 @@
 .dsk-slider {
     background-color:$color-light ;
     padding: 3% 15%;
-  }
+   }
+
 
     .itc-slider {
 
@@ -31,17 +32,32 @@
       }
 
       &__item {
-        background-color:$color-dark-green;
         border-radius: 20px;
         counter-increment: slide;
         position: relative;
         display: grid;
         grid-template-columns: 1fr 2fr;
         grid-template-rows: 1fr;
-        padding: 3% 5% 3% 5%;
         align-content: center;
 
+        &_mk {
+            background-color:$color-dark-green;
+            padding: 3% 5% 3% 5%;
 
+        }
+
+        &_reviews {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            padding: 0 5%;
+            
+            & img {
+                height: 100%;;
+            }
+
+
+        }
        
       }
 
@@ -362,7 +378,7 @@
     }
     
     .main__reviews__dsk {
-        padding: 3% 15%;
+        padding: 0 15% 3% 15%;
         background-color: $color-light;
 
         &__title {

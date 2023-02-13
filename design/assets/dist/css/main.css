@@ -1135,15 +1135,26 @@ p, a {
   counter-reset: slide;
 }
 .itc-slider__item {
-  background-color: rgba(160, 180, 91, 0.6);
   border-radius: 20px;
   counter-increment: slide;
   position: relative;
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 1fr;
-  padding: 3% 5% 3% 5%;
   align-content: center;
+}
+.itc-slider__item_mk {
+  background-color: rgba(160, 180, 91, 0.6);
+  padding: 3% 5% 3% 5%;
+}
+.itc-slider__item_reviews {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0 5%;
+}
+.itc-slider__item_reviews img {
+  height: 100%;
 }
 .itc-slider__text {
   display: flex;
@@ -1406,7 +1417,7 @@ p, a {
     font-size: calc((100vw + 1763.38px) / 133.23);
   }
   .main__reviews__dsk {
-    padding: 3% 15%;
+    padding: 0 15% 3% 15%;
     background-color: #FBFFE9;
   }
   .main__reviews__dsk__title {
