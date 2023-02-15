@@ -9,7 +9,7 @@
 
 .dsk-slider {
     background-color:$color-light ;
-    padding: 3% 15%;
+    padding: 3% 17%;
    }
 
 
@@ -39,6 +39,7 @@
         grid-template-columns: 1fr 2fr;
         grid-template-rows: 1fr;
         align-content: center;
+        max-height: 80vh;
 
         &_mk {
             background-color:$color-dark-green;

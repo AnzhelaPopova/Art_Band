@@ -1118,7 +1118,7 @@ p, a {
 
 .dsk-slider {
   background-color: #FBFFE9;
-  padding: 3% 15%;
+  padding: 3% 17%;
 }
 
 .itc-slider__title {
@@ -1142,6 +1142,7 @@ p, a {
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 1fr;
   align-content: center;
+  max-height: 80vh;
 }
 .itc-slider__item_mk {
   background-color: rgba(160, 180, 91, 0.6);
