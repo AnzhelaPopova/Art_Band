@@ -1,1 +1,349 @@
 @import "./variables.scss";
+
+@media screen and (max-width: $tablet) {
+
+    .mbl-header-btn, .wrapper-mbl-mk   {
+        display: none;
+    }
+
+
+    .main-footer-mbl {
+        background-color: $color-dark-green;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__title {
+            font-family: $title-font;
+            font-weight: 700;
+            font-size: 1.5em;
+            text-align: center;
+            color: $color-text;
+            line-height: 30px;
+            margin: 12% 0 8% 0;
+
+            &_next {
+                margin: 8% 0 8% 0;
+            }
+        }
+
+
+        &__text {
+            font-family: $default-font;
+            font-weight: 400;
+            font-size: calc(( 100vw + 182.66px ) / 33.9);
+            text-align: center;
+            color: $color-text;
+            margin-bottom: 8%;
+            line-height: calc(( 100vw + 996.667px ) / 45.22);
+        }
+
+        &__social-block {
+            display: flex;
+            gap: 3%;
+        }
+
+        &__icon {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &__img {
+            width: 70%;
+
+            &_big {
+                width: 85%;
+            }
+        }
+
+        &__link {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: flex-start;
+            margin-bottom: 0;
+        }
+
+        &__web {
+            text-decoration: none;
+            color: $color-text;
+            font-weight: 600;
+        }
+
+        &__number {
+            font-size: 0.9em;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        &__address {
+            width: 70vw;
+        }
+
+        &__map {
+            margin-bottom: 8%;
+        }
+
+        &__copy {
+            display: flex;
+            width: 100vw;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 10%;
+        }
+
+        &__brand {
+            font-family: $title-font-logo;
+            color: $color-text;
+            font-size: 1.5em;
+        }
+    }
+}
+
+@media screen and (min-width: $tablet) {
+
+.footer__list_items-mbl{
+    display: none;
+}    
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    background-color: $color-dark-green;
+
+    &__work {
+        display: flex;
+        flex-direction: row;
+        padding-top: 10vh;
+    }
+
+    &__nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__cosial {
+        margin-left: 9vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+
+        &_items {
+            width: 40%;
+            margin: 20px 20px;
+            cursor: pointer;
+
+            &:hover {
+                text-decoration: underline;
+                color: $color-text;
+            }
+        }
+
+        &_small {
+            width: 48%;
+        }
+    }
+  
+     &__logo {
+        font-family: $title-font;
+        display: flex;
+        align-items: flex-end;
+        font-size: calc((100vw + 2693px)/ 173.1);
+        width: 50vw;
+        border-top: 2px solid $color-text;
+        justify-content: center;
+        align-content: center;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        margin-top: 40px;
+
+
+            & span {
+                font-family: $title-font-logo;
+                color: $color-text;
+                font-size: 1.5em;
+            } 
+        } 
+
+        &__copy-dsk  {
+            color: $color-text;
+            font-size: calc((100vw + 14810px)/ 865.5);
+        }
+
+        &__list {
+        display: flex;
+        flex-direction: column;
+        margin: 0px 9vw;
+
+            &_contacts {
+                font-size: calc((100vw + 2346.8px)/ 173.1);
+                padding: 0 auto;
+            }
+
+            &_items {
+            width: 100%;
+            font-size: 20px;
+            list-style: none;
+            color: $color-text;
+            padding: 10px 0 10px 0;
+            font-family: $title-font;
+            text-decoration: none;
+            cursor: pointer;
+            font-size: calc((100vw + 2693px)/ 173.1);
+
+
+            &:hover {
+                text-decoration: underline;
+                color: $color-text;
+            }
+            } 
+
+        &_hours {
+          background: url(../../design/assets/icons/clock.png) left no-repeat;
+          padding: 10px 0 0 50px;
+          font-size: 18px;
+          line-height: 30px;
+          font-family: $title-font;
+          color: $color-text;
+          font-size: calc((100vw + 2346.8px)/ 173.1);
+        }
+
+        &_address {
+          background: url(../../design/assets/icons/location.png) left no-repeat;
+          padding: 20px 0px 25px 50px;
+          font-size: 18px;
+          line-height: 30px;
+          font-family: $title-font;
+          color: $color-text;
+          font-size: calc((100vw + 2346.8px)/ 173.1);
+        }
+
+        &_phone {
+          background: url(../../design/assets/icons/phone.png) left no-repeat;
+          padding: 2px 0 3px 50px;
+          font-size: 18px;
+          line-height: 30px;
+          font-family: $title-font;
+          color: $color-text;
+          font-size: calc((100vw + 2346.8px)/ 173.1);
+
+        }
+      }
+    }
+}
+
+@media screen and (max-width: $tablet) {
+
+    .footer__list_items {
+        display: none;
+    }
+
+    
+    .footer {
+        display: grid;
+        grid-template-rows: 1fr 10vh ;
+        background-color: $color-dark-green;
+        background-size: contain;
+        height: calc(100vh - 86px);
+        align-content: space-around;
+
+        &__nav {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin:0 74px;
+            border-top: 2px solid $color-text;
+            border-bottom: 2px solid $color-text;
+        }
+    
+        &__work {
+            display: grid;
+            align-content: center;
+        }
+
+        &__cosial {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+    
+            &_items {
+                width: 50%;
+                margin: 20px 20px;
+                cursor: pointer;
+                padding: auto;
+            }
+
+            &_small {
+                width: 58%;
+            }
+        }
+    
+       
+         &__logo {
+            display: flex;
+            justify-content: center;
+            margin: auto;
+
+                
+    
+                & span {
+                    font-family: $title-font-logo;
+                    color: $color-text;
+                    font-size: calc((100vw - 20.83px)/ 16.9);
+                } 
+            } 
+
+        &__copy-dsk {
+            font-size: calc((100vw - 54.75px)/ 16.9);
+        }    
+
+        &__items {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+        }
+    
+
+        &__list {
+            display: flex;
+            flex-direction: column;
+            margin: 0px 5vw;
+            padding: 8% 0 0 0;
+            cursor: pointer;
+               
+                &_items-mbl {
+                list-style: none;
+                text-decoration: none;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                cursor: pointer;
+                font-family: $default-font;
+                font-weight: 700;
+                font-size: calc((100vw + 123.3px)/ 25.4);
+                text-align: center;
+                color: $color-text;
+                margin-bottom: 6%;
+                line-height: 4vh;
+                } 
+
+            &_contacts {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                font-family: $default-font;
+                font-weight: 400;
+                font-size: calc((100vw + 372.6px)/ 40.7);
+                text-align: center;
+                color: $color-text;
+                margin-bottom: 6%;
+                line-height: 4vh;
+            }
+            }
+        }
+    }

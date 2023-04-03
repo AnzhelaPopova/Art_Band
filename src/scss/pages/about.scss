@@ -1,3 +1,168 @@
 @import "../layouts/variables.scss";
 
+.about__overflow {
+  overflow-x: hidden;
+}
 
+@media screen and (min-width: $tablet) {
+  .about__wrapper{
+    width: 100vw;
+    height: auto;
+    background-color: $color-light;
+    }
+    .about__content {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        column-gap: 5vw;
+      }
+    
+    .about__title {//test
+      width: 72%;
+      text-align: center;
+      &__h2  
+       {
+          color: $color-text;
+          font-family:$title-font;
+          font-weight: bold;
+          font-size: calc(( 100vw + 3129px ) / 216.5);
+          text-transform: uppercase;
+          text-align: center;
+          padding-top: 7vh;
+          padding-bottom: 4vh;
+          
+         } 
+    }
+    .about__whychooseus {
+    width: 100vw;
+    text-align: center;
+    &__h2  
+     {
+        color: $color-text;
+        font-family:$title-font;
+        font-weight: bold;
+        font-size: calc(( 100vw + 3129px ) / 216.5);
+        text-transform: uppercase;
+        text-align: center;
+        padding-top: 7vh;
+        padding-bottom: 4vh;
+        
+       } 
+    }
+    .about__text{
+        width: 50vw;
+        height: auto;
+
+        text-align: justify;
+    &__paragraph {
+        font-family: $default-font;
+        font-size: calc(( 100vw + 2696px ) / 216.5);
+        color: $color-text;
+        margin-left: 10px;
+        line-height: 1.2em;
+        margin-top: 1vh;
+    }
+    }
+    .about__carousel{
+        width: 25vw;
+        height: auto;
+        padding-top: 1vh;
+    }
+    
+    .about__advantages {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0 10vw 6vw 10vw;
+    
+    &__cards {
+       text-align: center;
+       padding-top: 20px;
+       
+       p {
+        font-family: $default-font;
+        color: $color-text;
+        font-size: calc(( 100vw + 2696px ) / 288.6);
+        margin-top: 3vh;
+       }
+    }
+    }
+}
+
+
+@media screen and (max-width: $tablet) {
+
+  .about__wrapper {
+    margin-top: 85px;
+    height: auto;
+    background-color: $color-light;
+  }
+
+  .about__carousel {
+    width: 100vw;
+    padding-left: 25px; 
+    padding-right: 25px;
+  }
+  .about__text {
+display: flex;
+flex-direction: column;
+width: 100%;
+padding: 0 7vw;
+
+
+    text-align: justify;
+    color: $color-text;
+        font-family:$default-font;
+        font-size: calc(( 100vw + 409px ) / 49);
+        font-weight: 300;
+        color: $color-text;
+  
+  }
+  .about__content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .about__title,
+  .about__whychooseus {
+
+    &__h2  {
+    font-size: calc(( 100vw + 278.3px ) / 32.6);
+    font-weight: 600;
+    color: $color-text;
+        font-family:$title-font;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 3vh 0 1vh 0;
+
+
+  }
+  }
+
+  .about__advantages {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 3vh;
+  
+  &__cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-top: 20px;
+    
+    img {
+        width: 45%;
+
+    }  
+  }
+
+  p {
+    font-family: $default-font;
+    color: $color-text;
+    font-size: calc(( 100vw + 17px ) / 28);
+    margin-top: 3vh;
+    text-align: center;
+   }}
+}

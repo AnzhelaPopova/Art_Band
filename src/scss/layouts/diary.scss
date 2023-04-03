@@ -1,1 +1,178 @@
 @import "./variables.scss";
+
+@media screen and (max-width: $tablet) {
+
+    .dsk-diary__link {
+        display: none;
+    }
+
+    .mbl-diary {
+        background-color: $color-light;
+        display: flex;
+        justify-content: center;
+
+        &__block {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-right: 1%;
+            margin-bottom: 4vh;
+            background-color: $color-dark;
+            border-radius: 45px;
+            box-shadow: 4px 4px 4px 0 rgba(63, 84, 0, 0.6);
+            width: 90%;
+        }
+
+        &__title {
+            font-family: $default-font;
+            font-weight: 900;
+            font-size: calc((100vw + 129px) / 28);
+            color: $color-text;
+            text-align: center;
+            margin: 8% 3% 8% 3%;
+        }
+
+        &__discription {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__text {
+            font-family: $default-font;
+            font-weight: 500;
+            font-size: calc((100vw + 173.8px) / 39.2);
+            color: $color-text;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin: 0 4% 0 4%;
+        }
+
+        &__part {
+            margin-bottom: 8%;
+            text-align: center;
+        }
+
+        &__img {
+            width: 85%;
+            margin: 2% 0 7% 7%;
+        }
+
+        &__go {
+            display: flex;
+            justify-content: center;
+        }
+
+        &__link {
+            background-color: $color-light-green;
+            font-family: $default-font;
+            color: $color-light;
+            text-decoration: none;
+            font-size: calc((100vw + 173.8px) / 39.2);
+            width: calc((100vw + 480.27px) / 7.1);
+            height: calc((100vw + 409px) / 26.1);
+            border-radius: 15px;
+            box-shadow: 4px 4px 4px 0 rgba(63, 84, 0, 0.7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 4vh;
+
+            &_mk {
+                margin-top: 6vw;
+
+                font-family: $default-font;
+            }
+
+        }
+    }
+}
+
+
+@media screen and (min-width: $tablet) {
+
+
+    .mbl-diary__go,
+    .mbl-diary__link {
+        display: none;
+    }
+
+    .dsk-diary {
+        background-color: $color-light;
+        display: flex;
+        justify-content: center;
+
+
+        &__block {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: $color-dark;
+            border-radius: 45px;
+            box-shadow: 4px 4px 4px 0 rgba(63, 84, 0, 0.6);
+            width: 60vw;
+            margin-bottom: 5.5vw;
+            padding: 3% 0 3% 0;
+
+            &_soap, &_candle {
+                margin-bottom: 0;
+            }
+
+        }
+
+        &__title {
+            font-family: $default-font;
+            font-weight: 900;
+            font-size: calc((100vw + 1541.3px) / 115.46);
+            color: $color-text;
+            text-align: center;
+            margin-bottom: 3vh;
+        }
+
+        &__discription {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+        &__text {
+            font-family: $default-font;
+            font-weight: 500;
+            font-size: calc((100vw + 1830px) / 216.5);
+            color: $color-text;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__part {
+            margin: 6% 0 0 15%;
+            text-align: center;
+        }
+
+        &__link {
+            background-color: $color-light-green;
+            color: $color-light;
+            text-decoration: none;
+            font-size: 1em;
+            width: calc((100vw + 2163px) / 26.6);
+            height: calc((100vw + 4428px) / 173.2);
+            border-radius: 10px;
+            box-shadow: 4px 4px 4px 0 rgba(63, 84, 0, 0.7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 5.5vh;
+
+            &_mk {
+                margin-top: 2vw;
+            }
+        }
+
+        &__img {
+            width: 70%;
+            margin: 3% 0 0 15%;
+        }
+            }
+}
