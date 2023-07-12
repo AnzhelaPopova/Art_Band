@@ -2,9 +2,9 @@
 <p>Website of the art workshop in Khimki</p>
 
 <p align="left"><img src="./design/assets/images/screenshots/mainScreen.png" width="400px" alt="main page screenshot"></p>
-<p align="left"><img src="./design/assets/images/screenshots/masterСlassPhotography.png" width="400px" alt="main page screenshot"></p>
-<p align="left"><img src="./design/assets/images/screenshots/aboutUs.png" width="400px" alt="main page screenshot"></p>
-<p align="left"><img src="./design/assets/images/screenshots/handmadeShop.png" width="400px" alt="main page screenshot"></p>
+<p align="left"><img src="./design/assets/images/screenshots/masterСlassPhotography.png" width="400px" alt="Photography master сlass page screenshot"></p>
+<p align="left"><img src="./design/assets/images/screenshots/aboutUs.png" width="400px" alt="about us page screenshot"></p>
+<p align="left"><img src="./design/assets/images/screenshots/handmadeShop.png" width="400px" alt="handmade shop page screenshot"></p>
 
 <h2>How to make it work?</h2>
 
