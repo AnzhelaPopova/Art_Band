@@ -54,7 +54,7 @@
             flex-direction: row;
             justify-content: center;
                 column-gap: 5%;
-            padding: 0 5%;
+            padding: 0 14%;
         }
       }
 
@@ -88,20 +88,18 @@
             text-align: center;
             font-size: calc(( 100vw + 3042.4px ) / 173.2);
         }
-
-     
-      }
+}
 
     .itc-slider__item::before {
     
-      position: absolute;
-      top: 10px;
-      right: 20px;
-      color: #fff;
-      font-style: italic;
-      font-size: 32px;
-      font-weight: bold;
-      display: block;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        color: #fff;
+        font-style: italic;
+        font-size: 32px;
+        font-weight: bold;
+        display: block;
     }
 
     .itc-slider-button {
@@ -130,12 +128,6 @@
         cursor: pointer;
     }
 
-
-    .itc-slider__item img {
-        border-radius: 20px;
-        margin: auto;
-        width: calc((100vw + 388.88px)/ 4.8);;
-}
 }
 
 @media  (min-width: 769px) and (max-width: 1400px) {
@@ -143,11 +135,11 @@
     .dsk-slider {
         background-color:$color-light ;
         padding: 3% 5%;
-       }
+    }
     
         .itc-slider {
     
-           &__title {
+            &__title {
                 color: $color-text;
                 font-family: $title-font;
                 font-weight: 700;
@@ -157,11 +149,11 @@
                 display: flex;
                 justify-content: center;
     
-           } 
+        } 
          
-          &__items {
+        &__items {
             counter-reset: slide;
-          }
+        }
     
           &__item {
             border-radius: 20px;
@@ -262,13 +254,6 @@
             margin: 1vh auto;
             cursor: pointer;
         }
-    
-    
-        .itc-slider__item img {
-            border-radius: 20px;
-            margin: auto;
-            width: calc((100vw + 388.88px)/ 4.8);;
-    }
     }
 
 
@@ -324,7 +309,6 @@
                 column-gap: 5%;
                 padding: 0 5%;
             }
-           
           }
     
           &__text {
@@ -353,13 +337,12 @@
                 
             }
     
-    
-            // &_title {
-            //     display: flex;
-            //     justify-content: center;
-            //     text-align: center;
-            //     font-size: calc(( 100vw + 3042.4px ) / 173.2);
-            // }
+            &_title {
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                font-size: calc(( 100vw + 3042.4px ) / 173.2);
+            }
     
          
           }
@@ -401,13 +384,6 @@
             margin: 1vh auto;
             cursor: pointer;
         }
-    
-    
-        .itc-slider__item img {
-            border-radius: 20px;
-            margin: auto;
-            width: calc((100vw + 388.88px)/ 4.8);
-    }
     }
 
 

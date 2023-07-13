@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Annabelle";
+  src: url(../../design/assets/fonts/Annabelle.ttf);
+}
+@font-face {
+  font-family: "Inter";
+  src: url(../../design/assets/fonts/Inter-Regular.ttf);
+}
+@font-face {
+  font-family: "Inter";
+  src: url(../../design/assets/fonts/Inter-Bold.ttf);
+}
+@font-face {
+  font-family: "Inter";
+  src: url(../../design/assets/fonts/Inter-SemiBold.ttf);
+}
+@font-face {
+  font-family: "Calibri";
+  src: url(../../design/assets/fonts/Calibri_bold.ttf);
+}
+@font-face {
+  font-family: "Nunito";
+  src: url(../../design/assets/fonts/Nunito-Regular.ttf);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p, a {
+  margin: 0;
+}
+
+.button-record-dsk {
+  background-color: #A0B45B;
+  font-family: "Nunito", sans-serif;
+  color: #FBFFE9;
+  text-decoration: none;
+  font-size: calc((100vw + 1065.8px) / 101.8);
+  width: calc((100vw + 556.4px) / 10.1);
+  height: calc((100vw + 617.6px) / 34.64);
+  border-radius: 15px;
+  box-shadow: 4px 4px 4px 0 rgba(63, 84, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4vh;
+}
+
+.button-record-mbl {
+  background-color: #A0B45B;
+  color: #FBFFE9;
+  text-decoration: none;
+  font-size: calc((100vw + 173.8px) / 35);
+  width: calc((100vw + 480.27px) / 7.1);
+  height: calc((100vw + 409px) / 26.1);
+  border-radius: 15px;
+  box-shadow: 4px 4px 4px 0 rgba(63, 84, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5.5vh;
+}
+
+.button-more-mbl {
+  background-color: #FBFFE9;
+  color: rgba(0, 0, 0, 0.7);
+  text-decoration: none;
+  font-size: 1em;
+  width: calc((100vw + 2163px) / 20);
+  height: calc((100vw + 4428px) / 120);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 6.15vw;
+  padding: 1em;
+  text-transform: uppercase;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+}/*# sourceMappingURL=general.css.map */

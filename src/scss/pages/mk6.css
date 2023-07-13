@@ -1,0 +1,194 @@
+@charset "UTF-8";
+.mkphoto__body {
+  overflow-x: hidden;
+  background-color: #FBFFE9;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+@media screen and (min-width: 769px) {
+  .mkphoto {
+    width: 100vw;
+    margin-top: 5.63vw;
+  }
+  .mkphoto__main {
+    display: flex;
+    align-items: center;
+  }
+  .mkphoto__plant {
+    margin-left: 8vw;
+    width: 73%;
+    height: 80%;
+    border-radius: 15px;
+  }
+  .mkphoto__plant-text {
+    font-weight: 300;
+    margin-left: 8vw;
+    font-family: "Nunito", sans-serif;
+    margin-top: 4.07vw;
+    font-size: calc((27vw - 19px) / 17);
+    line-height: 120%;
+    max-width: 37.5vw;
+  }
+  .mkphoto__title {
+    font-family: "Inter", sans-serif;
+    width: 80%;
+    text-align: center;
+    font-weight: 600;
+    font-size: calc((100vw - 166.27px) / 30.136);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    padding-bottom: 2vw;
+  }
+  .mkphoto__maintext {
+    font-family: "Nunito", sans-serif;
+    font-weight: 300;
+    margin-top: 2em;
+    font-size: calc((100vw + 68.47px) / 69.789);
+    line-height: 120%;
+  }
+  .mkphoto__list {
+    list-style-type: none;
+  }
+  .mkphoto__list::before {
+    content: "– ";
+  }
+  .mkphoto__plant-text2 {
+    display: none;
+  }
+  .mkphoto__images {
+    margin: 5% 8vw 5% 8vw;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3vw;
+  }
+  .mkphoto__img-basket, .mkphoto__img-cup, .mkphoto__img-hat {
+    border-radius: 15px;
+    width: 32%;
+  }
+  .mkphoto__img-headband {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .mkphoto {
+    width: 100vw;
+    margin-top: 85px;
+  }
+  .mkphoto__main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .mkphoto__plant {
+    display: block;
+    width: 86.77vw;
+    height: 86.77vw;
+    border-radius: 45px;
+    margin-top: 4.07vw;
+  }
+  .mkphoto__plant-text {
+    display: none;
+  }
+  .mkphoto__title {
+    margin: 0 auto;
+    margin-top: 3.56vw;
+    font-family: "Inter", sans-serif;
+    width: 80%;
+    text-align: center;
+    font-weight: 600;
+    font-size: calc((100vw - 19px) / 17);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    padding-bottom: 5.6vw;
+  }
+  .mkphoto__maintext, .mkphoto__plant-text2 {
+    font-weight: 300;
+    margin-left: 2em;
+    text-align: left;
+    font-family: "Nunito", sans-serif;
+    margin-top: 4.07vw;
+    font-size: calc((100vw + 87.86px) / 26.714);
+    line-height: 120%;
+  }
+  .mkphoto__list {
+    list-style-type: none;
+  }
+  .mkphoto__list::before {
+    content: "– ";
+  }
+  .mkphoto__images {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2em;
+    margin-bottom: 30px;
+    gap: 2em;
+  }
+  .mkphoto__img-basket, .mkphoto__img-cup, .mkphoto__img-hat, .mkphoto__img-headband {
+    border-radius: 15px;
+    width: 40%;
+    height: 40%;
+  }
+}
+@media screen and (min-width: 1890px) {
+  .mkphoto {
+    width: 100vw;
+    margin-top: 5.63vw;
+  }
+  .mkphoto__main {
+    display: flex;
+    align-items: center;
+  }
+  .mkphoto__plant {
+    margin-left: 8vw;
+    width: 73%;
+    height: 80%;
+    border-radius: 15px;
+  }
+  .mkphoto__plant-text {
+    font-weight: 300;
+    margin-left: 8vw;
+    font-family: "Nunito", sans-serif;
+    margin-top: 4.07vw;
+    font-size: calc((30vw - 19px) / 17);
+    line-height: 120%;
+    max-width: 37.5vw;
+  }
+  .mkphoto__title {
+    font-family: "Inter", sans-serif;
+    width: 80%;
+    text-align: center;
+    font-weight: 600;
+    font-size: calc((100vw - 166.27px) / 30.136);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    padding-bottom: 2vw;
+  }
+  .mkphoto__maintext {
+    font-family: "Nunito", sans-serif;
+    font-weight: 300;
+    margin-top: 2em;
+    font-size: calc((30vw - 19px) / 17);
+    line-height: 120%;
+  }
+  .mkphoto__list {
+    list-style-type: none;
+  }
+  .mkphoto__list::before {
+    content: "– ";
+  }
+  .mkphoto__plant-text2 {
+    display: none;
+  }
+  .mkphoto__images {
+    margin: 5% 8vw 5% 8vw;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3vw;
+  }
+  .mkphoto__img-basket, .mkphoto__img-cup, .mkphoto__img-hat {
+    border-radius: 15px;
+    width: 32%;
+  }
+  .mkphoto__img-headband {
+    display: none;
+  }
+}/*# sourceMappingURL=mk6.css.map */

@@ -1,0 +1,141 @@
+.reviews-body {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.reviews-wrapper {
+  background-color: #FBFFE9;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  margin-top: 85px;
+}
+
+.reviews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3vh;
+  margin-top: 3vh;
+}
+
+.reviews-title {
+  font-family: "Inter", sans-serif;
+  font-size: 1.6em;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.reviews-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 3vh;
+}
+
+/*slider*/
+.slider__rev {
+  position: relative;
+  margin: 0 auto;
+  max-width: 320px;
+}
+
+.slider__wrapper__rev {
+  overflow: hidden;
+  max-width: 100%;
+  border-radius: 20px;
+}
+
+.slider__items__rev {
+  display: flex;
+  transition: transform 0.5s ease;
+  will-change: transform;
+}
+
+.slider_disable-transition__rev {
+  transition: none;
+}
+
+.slider__item__rev {
+  flex: 0 0 100%;
+  max-width: 100%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  will-change: transform;
+  display: flex;
+  align-content: center;
+}
+
+.review__text__item {
+  padding: 3vh 9vw;
+  background-color: rgba(160, 180, 91, 0.6);
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+}
+
+/* buttons left and right */
+.slider__control__rev {
+  position: absolute;
+  top: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 50px;
+  color: #fff;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.2);
+  border: none;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.slider__control_hide__rev {
+  display: none;
+}
+
+.slider__control__rev[data-slide=prev] {
+  left: 0;
+}
+
+.slider__control__rev[data-slide=next] {
+  right: 0;
+}
+
+.slider__control__rev:hover,
+.slider__control__rev:focus {
+  color: #fff;
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0.3);
+  outline: 0;
+}
+
+.slider__control__rev::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: transparent no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.slider__control__rev[data-slide=prev]::before {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.slider__control__rev[data-slide=next]::before {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.reviews-img {
+  max-width: 320px;
+  margin-bottom: 3vh;
+}/*# sourceMappingURL=reviews.css.map */

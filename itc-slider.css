@@ -30,6 +30,14 @@
   max-width: 100%;
   user-select: none;
   will-change: transform;
+    
+}
+
+.itc-slider__item_foto {
+  border-radius: 20px;
+  margin: auto;
+  /* width: calc((100vw + 388.88px)/ 4.8);; */
+  height: calc((100vw + 388.88px)/ 4.8);;;
 }
 
 /* кнопки влево и вправо */

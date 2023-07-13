@@ -1,0 +1,773 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 1401px) {
+  .dsk-slider {
+    background-color: #FBFFE9;
+    padding: 3% 17%;
+  }
+  .itc-slider__title {
+    color: rgba(0, 0, 0, 0.7);
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: calc((100vw + 2442.8px) / 123.5);
+    padding: 30px 0;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+  }
+  .itc-slider__items {
+    counter-reset: slide;
+  }
+  .itc-slider__item {
+    border-radius: 20px;
+    counter-increment: slide;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    align-content: center;
+    max-height: 80vh;
+  }
+  .itc-slider__item_mk {
+    background-color: rgba(160, 180, 91, 0.6);
+    padding: 3% 5% 3% 5%;
+  }
+  .itc-slider__item_reviews {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    -moz-column-gap: 5%;
+         column-gap: 5%;
+    padding: 0 14%;
+  }
+  .itc-slider__text {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 0 5%;
+  }
+  .itc-slider__text h2 {
+    padding: 5px;
+  }
+  .itc-slider__text_description {
+    font-family: "Nunito", sans-serif;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: calc((100vw + 1763.38px) / 133.23);
+  }
+  .itc-slider__text_description-bold {
+    font-weight: bold;
+    text-align: center;
+  }
+  .itc-slider_title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: calc((100vw + 3042.4px) / 173.2);
+  }
+  .itc-slider__item::before {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #fff;
+    font-style: italic;
+    font-size: 32px;
+    font-weight: bold;
+    display: block;
+  }
+  .itc-slider-button {
+    background-color: #A0B45B;
+    font-family: "Nunito", sans-serif;
+    color: #FBFFE9;
+    text-decoration: none;
+    font-size: calc((100vw + 1065.8px) / 101.8);
+    width: calc((100vw + 556.4px) / 10.1);
+    height: calc((100vw + 617.6px) / 34.64);
+    border-radius: 15px;
+    box-shadow: 4px 4px 4px 0 rgba(63, 84, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1vh auto;
+    cursor: pointer;
+  }
+  .itc-slider-button-no {
+    color: rgba(0, 0, 0, 0.7);
+    font-family: "Nunito", sans-serif;
+    text-decoration: none;
+    font-size: calc((100vw + 1065.8px) / 101.8);
+    margin: 1vh auto;
+    cursor: pointer;
+  }
+}
+@media (min-width: 769px) and (max-width: 1400px) {
+  .dsk-slider {
+    background-color: #FBFFE9;
+    padding: 3% 5%;
+  }
+  .itc-slider__title {
+    color: rgba(0, 0, 0, 0.7);
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: calc((100vw + 2442.8px) / 123.5);
+    padding: 30px 0;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+  }
+  .itc-slider__items {
+    counter-reset: slide;
+  }
+  .itc-slider__item {
+    border-radius: 20px;
+    counter-increment: slide;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    align-content: center;
+    max-height: 80vh;
+  }
+  .itc-slider__item_mk {
+    background-color: rgba(160, 180, 91, 0.6);
+    padding: 3% 5% 3% 5%;
+  }
+  .itc-slider__item_reviews {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    -moz-column-gap: 5%;
+         column-gap: 5%;
+    padding: 0 5%;
+  }
+  .itc-slider__text {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 0 5%;
+  }
+  .itc-slider__text h2 {
+    padding: 5px;
+  }
+  .itc-slider__text_description {
+    font-family: "Nunito", sans-serif;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: calc((100vw + 1763.38px) / 133.23);
+  }
+  .itc-slider__text_description-bold {
+    font-weight: bold;
+    text-align: center;
+  }
+  .itc-slider_title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: calc((100vw + 3042.4px) / 173.2);
+  }
+  .itc-slider__item::before {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #fff;
+    font-style: italic;
+    font-size: 32px;
+    font-weight: bold;
+    display: block;
+  }
+  .itc-slider-button {
+    background-color: #A0B45B;
+    font-family: "Nunito", sans-serif;
+    color: #FBFFE9;
+    text-decoration: none;
+    font-size: calc((100vw + 1065.8px) / 101.8);
+    width: calc((100vw + 556.4px) / 10.1);
+    height: calc((100vw + 617.6px) / 34.64);
+    border-radius: 15px;
+    box-shadow: 4px 4px 4px 0 rgba(63, 84, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1vh auto;
+    cursor: pointer;
+  }
+  .itc-slider-button-no {
+    color: rgba(0, 0, 0, 0.7);
+    font-family: "Nunito", sans-serif;
+    text-decoration: none;
+    font-size: calc((100vw + 1065.8px) / 101.8);
+    margin: 1vh auto;
+    cursor: pointer;
+  }
+}
+@media screen and (max-width: 768px) {
+  .dsk-slider {
+    background-color: #FBFFE9;
+    padding: 3% 10%;
+  }
+  .itc-slider__title {
+    color: rgba(0, 0, 0, 0.7);
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: calc((100vw + 2442.8px) / 123.5);
+    padding: 30px 0;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+  }
+  .itc-slider__items {
+    counter-reset: slide;
+  }
+  .itc-slider__item {
+    border-radius: 20px;
+    counter-increment: slide;
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    align-content: center;
+  }
+  .itc-slider__item_mk {
+    background-color: rgba(160, 180, 91, 0.6);
+    padding: 3% 5% 3% 5%;
+  }
+  .itc-slider__item_mk img {
+    max-height: 160px;
+  }
+  .itc-slider__item_reviews {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    -moz-column-gap: 5%;
+         column-gap: 5%;
+    padding: 0 5%;
+  }
+  .itc-slider__text {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .itc-slider__text h2 {
+    padding: 5px;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 700;
+  }
+  .itc-slider__text_description {
+    font-family: "Nunito", sans-serif;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 16px;
+  }
+  .itc-slider__text_description-bold {
+    font-weight: bold;
+    text-align: center;
+  }
+  .itc-slider_title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: calc((100vw + 3042.4px) / 173.2);
+  }
+  .itc-slider__item::before {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #fff;
+    font-style: italic;
+    font-size: 32px;
+    font-weight: bold;
+    display: block;
+  }
+  .itc-slider-button {
+    background-color: #A0B45B;
+    font-family: "Nunito", sans-serif;
+    color: #FBFFE9;
+    text-decoration: none;
+    font-size: calc((100vw + 1065.8px) / 101.8);
+    width: calc((100vw + 556.4px) / 10.1);
+    height: calc((100vw + 617.6px) / 34.64);
+    border-radius: 15px;
+    box-shadow: 4px 4px 4px 0 rgba(63, 84, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1vh auto;
+    cursor: pointer;
+  }
+  .itc-slider-button-no {
+    color: rgba(0, 0, 0, 0.7);
+    font-family: "Nunito", sans-serif;
+    text-decoration: none;
+    font-size: calc((100vw + 1065.8px) / 101.8);
+    margin: 1vh auto;
+    cursor: pointer;
+  }
+}
+@media screen and (min-width: 768px) {
+  .main-page-mbl, .main-footer-mbl {
+    display: none;
+  }
+  .dsk-main-block {
+    background-image: url(../../design/assets/images/main/main-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: calc(99vh - 75px);
+  }
+  .dsk-main-block__brand {
+    width: calc((100vw + 2445.7px) / 4.94);
+  }
+  .dsk-main-block__text {
+    font-family: "Annabelle", sans-serif;
+    font-size: calc((100vw + 6160px) / 115.4);
+    line-height: 15px;
+  }
+  .dsk-main-block__text_bottom {
+    text-align: end;
+  }
+  .dsk-main-block__title {
+    font-family: "Calibri", sans-serif;
+    font-weight: 900;
+    color: #5D6F3A;
+    font-size: calc((100vw + 5294px) / 86.6);
+    text-align: center;
+  }
+  .dsk-main-block__discription {
+    color: rgba(0, 0, 0, 0.7);
+    font-family: "Inter", sans-serif;
+    text-align: center;
+    font-weight: 500;
+    font-size: calc((100vw + 7892px) / 346.4);
+  }
+  .dsk-main-block__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    width: calc((100vw + 6160px) / 43.3);
+    height: calc((100vw + 6160px) / 173.2);
+    background-color: rgb(81, 81, 81);
+    color: #FBFFE9;
+    font-family: "Inter", sans-serif;
+    font-size: calc((100vw + 4428px) / 433);
+    text-decoration: none;
+  }
+  .dsk-main-block__btn:hover {
+    color: white;
+    text-decoration: none;
+  }
+  .dsk-mk {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #FBFFE9;
+    justify-content: center;
+    padding: 0 5% 3% 5%;
+    -moz-column-gap: 4%;
+         column-gap: 4%;
+    row-gap: 5vh;
+  }
+  .dsk-mk__title {
+    width: 100vw;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.7);
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: calc((100vw + 2442.8px) / 123.5);
+    padding: 1% 0 1% 0;
+  }
+  .dsk-mk-card {
+    width: 20vw;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #A0B45B;
+    padding: 1%;
+    margin: 0;
+    align-items: center;
+  }
+  .dsk-mk-card__img {
+    width: 100%;
+  }
+  .dsk-mk-card__title {
+    color: rgba(0, 0, 0, 0.7);
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: calc((100vw + 1593px) / 157.4);
+    margin: 0;
+    padding: 5% 0 5% 0;
+    border-bottom: 1px solid black;
+    width: 95%;
+    text-align: center;
+  }
+  .dsk-mk-card__title_long {
+    padding: 1% 0 1% 0;
+  }
+  .dsk-mk-card__text {
+    padding-top: 5%;
+    align-self: flex-start;
+    margin-left: 2%;
+    color: rgba(0, 0, 0, 0.7);
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: calc((100vw + 466px) / 123.5);
+    text-decoration: none;
+  }
+  .dsk-mk-card__text:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: rgba(0, 0, 0, 0.7);
+  }
+  .main-booking-dsk {
+    padding: 3% 15%;
+    background-color: #FBFFE9;
+  }
+  .main-booking-dsk__container {
+    border-radius: 45px;
+    background-color: rgba(160, 180, 91, 0.6);
+  }
+  .main-booking-dsk__title {
+    padding-top: 7vh;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.7);
+    text-decoration: none;
+    font-size: calc((100vw + 3042.4px) / 173.2);
+  }
+  .main-booking-dsk__text {
+    font-family: "Nunito", sans-serif;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: calc((100vw + 1763.38px) / 133.23);
+  }
+  .main-booking-dsk__maintext {
+    padding: 3vh 5vw;
+    font-size: calc((100vw + 1763.38px) / 133.23);
+    font-weight: 500;
+    line-height: 146%;
+    letter-spacing: 0.05em;
+  }
+  .main-booking-dsk__smalltext {
+    margin-bottom: 0;
+    text-align: left;
+  }
+  .main-booking {
+    display: flex;
+    gap: 1%;
+    justify-content: center;
+    padding-bottom: 7vh;
+  }
+  .main-booking__icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .main-booking__img {
+    width: 70%;
+  }
+  .main-booking__img_big {
+    width: 85%;
+  }
+  .main-booking__link {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-bottom: 0;
+    font-family: "Nunito", sans-serif;
+  }
+  .main-booking__web {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: 300;
+  }
+  .main-booking__number {
+    font-size: 0.9em;
+    font-weight: 300;
+    margin-bottom: 0;
+  }
+  .main-booking__contact {
+    font-size: calc((100vw + 1763.38px) / 133.23);
+  }
+  .main__reviews__dsk {
+    padding: 0 15% 3% 15%;
+    background-color: #FBFFE9;
+  }
+  .main__reviews__dsk__title {
+    padding: 3vh 0;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.7);
+  }
+  .main__reviews__dsk__gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 30%);
+    grid-template-rows: repeat(2, 40%);
+    grid-gap: 1rem;
+    margin: 0 auto;
+    width: 60vw;
+    height: 60vh;
+    justify-content: center;
+    margin-bottom: 2vh;
+  }
+  .main__reviews__dsk__img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 5%;
+  }
+  .main__reviews__dsk__carousel__container {
+    font-size: calc((100vw + 2696px) / 173.2);
+  }
+  .main-footer-dsk {
+    background-color: rgba(160, 180, 91, 0.6);
+  }
+  .main-footer-dsk__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4%;
+    align-items: center;
+    padding: 3% 7% 0 7%;
+    font-family: "Nunito", sans-serif;
+  }
+  .main-footer-dsk__nav {
+    margin: auto;
+  }
+  .main-footer-dsk__map {
+    width: 100%;
+    height: auto;
+  }
+  .main-footer-dsk__title {
+    margin-bottom: 2vh;
+    color: rgba(0, 0, 0, 0.7);
+    font-family: "Inter", sans-serif;
+    font-size: 32px;
+  }
+  .main-footer-dsk__contacts {
+    font-size: 20px;
+  }
+  .main-footer-dsk__contacts_subtitle {
+    color: rgba(0, 0, 0, 0.7);
+  }
+  .main-footer-dsk__contacts_address {
+    display: block;
+    margin-bottom: 2vh;
+    color: rgba(0, 0, 0, 0.7);
+  }
+  .main-footer-dsk__hours {
+    margin-top: 2vh;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 20px;
+  }
+  .main-footer-dsk__hours__text {
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 20px;
+  }
+  .main-footer-dsk__copy {
+    display: flex;
+    width: 97vw;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 2%;
+  }
+  .main-footer-dsk__brand {
+    font-family: "Annabelle", sans-serif;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 2em;
+  }
+  .main-footer-dsk__text {
+    align-self: center;
+    font-size: 1.3em;
+    color: rgba(0, 0, 0, 0.7);
+    font-family: "Inter", sans-serif;
+  }
+  .copyright {
+    margin-bottom: 0;
+    padding: 0;
+    font-size: 1.2em;
+  }
+  .main-footer-social {
+    display: flex;
+    gap: 3%;
+    line-height: 2em;
+  }
+  .main-footer-social__icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .main-footer-social__img {
+    width: 70%;
+  }
+  .main-footer-social__img_big {
+    width: 85%;
+  }
+  .main-footer-social__link {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-bottom: 0;
+  }
+  .main-footer-social__web {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: 600;
+  }
+  .main-footer-social__number {
+    font-size: 0.9em;
+    font-weight: 600;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .dsk-slider-reviews {
+    display: none;
+  }
+  .main-footer-mbl__map {
+    width: 100vw;
+    height: 71vw;
+  }
+  .wrapper-main-page-mbl {
+    background-color: #FBFFE9;
+  }
+  .main-page-mbl-main-bgr {
+    background-image: url(../../design/assets/images/main/main-backgr-mbl.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+  .main-page-mbl-main {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-page-mbl-main__name {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20vh;
+    width: calc((100vw + 173.8px) / 1.57);
+    width: 80vw;
+    height: 100vh;
+  }
+  .main-page-mbl-main__logo {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+  }
+  .main-page-mbl-main__logo_black {
+    font-family: "Annabelle", sans-serif;
+    font-size: calc((100vw + 167px) / 15.5);
+    text-align: start;
+    line-height: 0.5em;
+  }
+  .main-page-mbl-main__logo_bottom {
+    text-align: end;
+  }
+  .main-page-mbl-main__logo_green {
+    font-family: "Calibri", sans-serif;
+    font-weight: 900;
+    color: #5D6F3A;
+    font-size: calc((100vw + 244.8px) / 15.5);
+    text-align: center;
+  }
+  .main-page-mbl-main__logo_description {
+    color: rgba(0, 0, 0, 0.7);
+    font-family: "Inter", sans-serif;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 30%;
+    font-size: calc((100vw + 400.5px) / 38.9);
+  }
+  .main-page-mbl-main__contackts {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-page-mbl-main__footer {
+    margin: auto;
+    padding-bottom: 8vh;
+    align-content: space-around;
+  }
+  .main-page-mbl-main__number {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: calc((100vw + 618px) / 63);
+    line-height: 4em;
+    text-align: center;
+  }
+  .main-page-mbl-main__social-networks {
+    display: flex;
+    margin-bottom: 10%;
+    -moz-column-gap: 5vw;
+         column-gap: 5vw;
+    justify-content: center;
+  }
+  .main-page-mbl-main__social-networks_tg {
+    margin-right: 22px;
+  }
+  .main-page-mbl-main__social-networks_tg img {
+    height: 9.74vw;
+  }
+  .main-page-mbl-main__social-networks_vk {
+    margin-left: 22px;
+  }
+  .main-page-mbl-main__social-networks_vk img {
+    height: 9.74vw;
+  }
+  .main-booking-dsk, .main-shop-dsk, .main-footer-dsk, .main__reviews__dsk, .mk-mbl {
+    display: none;
+  }
+}
+.main-page-mbl-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100vw;
+  height: 67.69vw;
+  margin-top: 30px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.main-page-mbl-section_1 {
+  background-image: url(../../design/assets/images/main/main1-2.png);
+  background-size: 100vw;
+}
+.main-page-mbl-section_2 {
+  background-image: url(../../design/assets/images/main/main3.png);
+  background-size: 100vw;
+}
+.main-page-mbl-section_3 {
+  background-image: url(../../design/assets/images/main/main4.png);
+  background-size: 100vw;
+}
+.main-page-mbl-section_4 {
+  background-image: url(../../design/assets/images/main/main5.png);
+  background-size: 100vw;
+  margin-bottom: 30px;
+}
+.main-page-mbl-section__title {
+  margin-top: 24.6vw;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: calc((100vw + 555px) / 45);
+  text-align: center;
+  color: #FFFFFF;
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper-main-page-mbl {
+    display: none;
+  }
+}/*# sourceMappingURL=main.css.map */

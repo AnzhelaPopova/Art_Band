@@ -1,0 +1,51 @@
+@media screen and (max-width: 768px) {
+  .mbl-mk {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FBFFE9;
+    margin-top: 85px;
+  }
+  .mbl-mk__title {
+    color: rgba(0, 0, 0, 0.7);
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 1.8em;
+    padding-top: 5%;
+  }
+  .mbl-mk-card {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #A0B45B;
+    padding: 5%;
+    margin: 5% 3% 5% 3%;
+  }
+  .mbl-mk-card__img {
+    width: 100%;
+  }
+  .mbl-mk-card__title {
+    color: rgba(0, 0, 0, 0.7);
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    padding: 5% 0 5% 0;
+    border-bottom: 1px solid black;
+    width: 95%;
+    text-align: center;
+  }
+  .mbl-mk-card__text {
+    padding-top: 5%;
+    align-self: flex-start;
+    margin-left: 2%;
+    color: rgba(0, 0, 0, 0.7);
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 1.2em;
+    text-decoration: none;
+  }
+  .mbl-mk-card__text:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+}/*# sourceMappingURL=mk.css.map */

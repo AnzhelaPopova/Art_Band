@@ -1,0 +1,142 @@
+.about__overflow {
+  overflow-x: hidden;
+}
+
+@media screen and (min-width: 768px) {
+  .about__wrapper {
+    width: 100vw;
+    height: auto;
+    background-color: #FBFFE9;
+  }
+  .about__content {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    -moz-column-gap: 5vw;
+         column-gap: 5vw;
+  }
+  .about__title {
+    width: 72%;
+    text-align: center;
+  }
+  .about__title__h2 {
+    color: rgba(0, 0, 0, 0.7);
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-size: calc((100vw + 3129px) / 216.5);
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 7vh;
+    padding-bottom: 4vh;
+  }
+  .about__whychooseus {
+    width: 100vw;
+    text-align: center;
+  }
+  .about__whychooseus__h2 {
+    color: rgba(0, 0, 0, 0.7);
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-size: calc((100vw + 3129px) / 216.5);
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 7vh;
+    padding-bottom: 4vh;
+  }
+  .about__text {
+    width: 50vw;
+    height: auto;
+    text-align: justify;
+  }
+  .about__text__paragraph {
+    font-family: "Nunito", sans-serif;
+    font-size: calc((100vw + 2696px) / 216.5);
+    color: rgba(0, 0, 0, 0.7);
+    margin-left: 10px;
+    line-height: 1.2em;
+    margin-top: 1vh;
+  }
+  .about__carousel {
+    width: 25vw;
+    height: auto;
+    padding-top: 1vh;
+  }
+  .about__advantages {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 10vw 6vw 10vw;
+  }
+  .about__advantages__cards {
+    text-align: center;
+    padding-top: 20px;
+  }
+  .about__advantages__cards p {
+    font-family: "Nunito", sans-serif;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: calc((100vw + 2696px) / 288.6);
+    margin-top: 3vh;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about__wrapper {
+    margin-top: 85px;
+    height: auto;
+    background-color: #FBFFE9;
+  }
+  .about__carousel {
+    width: 100vw;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .about__text {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 7vw;
+    text-align: justify;
+    color: rgba(0, 0, 0, 0.7);
+    font-family: "Nunito", sans-serif;
+    font-size: calc((100vw + 409px) / 49);
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.7);
+  }
+  .about__content {
+    display: flex;
+    flex-direction: column;
+  }
+  .about__title__h2,
+  .about__whychooseus__h2 {
+    font-size: calc((100vw + 278.3px) / 32.6);
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.7);
+    font-family: "Inter", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 3vh 0 1vh 0;
+  }
+  .about__advantages {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 3vh;
+  }
+  .about__advantages__cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-top: 20px;
+  }
+  .about__advantages__cards img {
+    width: 45%;
+    height: 50vh;
+  }
+  .about__advantages p {
+    font-family: "Nunito", sans-serif;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: calc((100vw + 17px) / 28);
+    margin-top: 3vh;
+    text-align: center;
+  }
+}/*# sourceMappingURL=about.css.map */
