@@ -35,12 +35,10 @@
 
 .itc-slider__item_foto {
   border-radius: 20px;
-  margin: auto;
-  /* width: calc((100vw + 388.88px)/ 4.8);; */
+  margin: 0 10px;
   height: calc((100vw + 388.88px)/ 4.8);;;
 }
 
-/* кнопки влево и вправо */
 .itc-slider__btn {
   position: absolute;
   top: 50%;
